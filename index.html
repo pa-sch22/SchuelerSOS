@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SchülerSOS – Lernmaterialien für deinen Erfolg</title>
+    <meta name="description" content="Professionelle Präsentationen, Handouts & Lernpläne für Schüler:innen – klar, strukturiert, effektiv.">
+    
+    <style>
+        /* Globale Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background: #0057b7; /* Starkes Blau – Vertrauen */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #0057b7;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            background-color: #f0f8ff;
+        }
+
+        /* Hauptinhalt */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #0057b7;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ffd700;
+            margin: 10px auto;
+        }
+
+        /* Leistungen */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+           
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            background: #0057b7;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            padding: 20px;
+            color: #555;
+        }
+
+        .service-icon {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ffd700;
+            padding: 20px;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            background: #f0f8ff;
+            padding: 50px 20px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .cta h2 {
+            color: #0057b7;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 14px 30px;
+            margin-top: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: #e6c200;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            font-size: 0.9rem;
+            background: #eee;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                display: block;
+            }
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <!-- Header mit Bild-Logo oben rechts -->
+<header style="background: #0057b7; /* Starkes Blau – Vertrauen */; color: white; text-align: center; padding: 60px 20px; position: relative;">
+    
+    <!-- Bild-Logo oben rechts -->
+    <div style="
+        position: absolute; 
+        top: 15px; 
+        right: 15px;">
+        <img src="logo.png" style="
+            height: 200px; 
+            border-radius: 8px;
+	 box-shadow: 0 0px 00px rgba(0,0,0,0.2);"> 
+           
+    </div>
+
+    <!-- Überschrift bleibt zentriert -->
+    <h1>SchülerSOS</h1>
+    <p>Deine professionellen Lernmaterialien – für bessere Noten & mehr Erfolg</p>
+    <p><a href="leistungen.html" style="color: #ffffff; font-weight: bold; text-decoration: none;">→ Zu den Preisen & Angeboten</a></p>
+</header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#vorteile">Vorteile</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main>
+
+        <!-- Leistungen -->
+        <section id="leistungen">
+            <h2>Was wir bieten</h2>
+            <div class="services">
+                
+                <!-- Präsentationen -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Präsentationen</h3>
+                    <p>Professionell gestaltete PowerPoint-Präsentationen – klar, visuell ansprechend und lehrplangerecht. Ideal für Vorträge und Referate.</p>
+                </div>
+
+                <!-- Handouts -->
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>Handouts</h3>
+                    <p>Kompakte Zusammenfassungen zum Ausdrucken – übersichtlich strukturiert, mit Merksätzen, Grafiken und Beispielen.</p>
+                </div>
+
+                <!-- Lernpläne -->
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>Lernpläne</h3>
+                    <p>Individuelle oder fachbezogene Lernpläne – effizient, zeitbasiert und motivierend. Perfekt für Klausurvorbereitung.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vorteile -->
+        <section id="vorteile">
+            <div class="cta">
+                <h2>Warum SchülerSOS?</h2>
+                <p>Wir helfen dir, Zeit zu sparen, den Überblick zu behalten und dich auf das Wesentliche zu konzentrieren – ohne Stress, mit System. Alle Leistungen ab 24h</p>
+                <a href="anfrage.html" class="btn">Anfragen</a>            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="cta">
+                <p>Hast du Rückfragen? Schreib mir eine Nachricht – ich melde mich schnellstmöglich!</p>
+                <a href="mailto:info@schuelersos.de" class="btn">E-Mail senden</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+ <footer>
+    <p>
+        <a href="impressum.html" style="color: #666; text-decoration: none;">Impressum</a> |
+        <a href="datenschutz.html" style="color: #666; text-decoration: none;">Datenschutz</a>
+    </p>
+    <p>&copy; 2025 SchülerSOS. Alle Rechte vorbehalten.</p>
+    <p>Ideal für Schüler:innen der Klassen 8–13</p>
+</footer>
+
+</body>
+</html>

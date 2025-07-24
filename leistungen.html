@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Leistungen & Preise – SchülerSOS</title>
+    <meta name="description" content="Klare Preise für Präsentationen, Handouts & Lernpläne. Professionell, schnell, günstig. Ideal für Schüler:innen.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0057b7;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #0057b7;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            background-color: #f0f8ff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #0057b7;
+            margin: 40px 0 20px;
+            position: relative;
+        }
+
+        h2::after {
+                display: block;
+            width: 60px;
+            height: 3px;
+            background: #ffd700;
+            margin: 10px auto;
+        }
+
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 320px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-header {
+            background: #0057b7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .card-header .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .card-body li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            color: #555;
+        }
+
+        .card-body li::before {
+            content: "✓";
+            color: #0057b7;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background: #ffd700;
+            color: #333;
+            padding: 14px;
+            margin-top: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e6c200;
+            transform: scale(1.05);
+        }
+
+        .examples {
+            background: #f0f8ff;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 50px 0;
+        }
+
+        .examples h3 {
+            color: #0057b7;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .examples ul {
+            max-width: 800px;
+            margin: 0 auto;
+            column-count: 2;
+            column-gap: 40px;
+            font-size: 1rem;
+        }
+
+        .examples li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+    padding: 40px 20px;
+            color: #666;
+            font-size: 0.9rem;
+            background: #eee;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .examples ul {
+                column-count: 1;
+            }
+            .card {
+                width: 100%;
+            }
+{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Hellgrauer Hintergrund */
+            color: #333;
+            line-height: 1.6;
+    </style>
+</head>
+<body>
+
+        <!-- Header mit Bild-Logo oben rechts -->
+<header style="background: #0057b7; /* Starkes Blau – Vertrauen */; color: white; text-align: center; padding: 60px 20px; position: relative;">
+    
+    <!-- Bild-Logo oben rechts -->
+    <div style="
+        position: absolute; 
+        top: 15px; 
+        right: 15px;">
+        <img src="logo.png" style="
+            height: 200px; 
+            border-radius: 8px;
+	 box-shadow: 0 0px 00px rgba(0,0,0,0.2);"> 
+           
+    </div>
+
+    <!-- Überschrift bleibt zentriert -->
+    <h1>SchülerSOS</h1>
+    <p>Deine professionellen Lernmaterialien – für bessere Noten & mehr Erfolg</p>
+   
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← Zurück</a></li>
+            <li><a href="#präsentation">Präsentation</a></li>
+            <li><a href="#handout">Handout</a></li>
+            <li><a href="#kombi">Kombi-Angebot</a></li>
+            <li><a href="#lernplan">Lernplan</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Günstige & faire Preise</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+            Alle Preise inkl. Bearbeitung, Design & Korrektur. Lieferung als PDF oder PPTX per E-Mail. 
+            <strong>Schnell, sicher, ohne Stress.</strong>
+        </p>
+
+        <div class="pricing-cards">
+
+            <!-- Präsentation -->
+            <div class="card" id="präsentation">
+                <div class="card-header">
+                    <h3>Präsentation</h3>
+                    <div class="price">ab 18 €</div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>bis zu 15 Folien</li>
+                        <li>Professionelles Design</li>
+                        <li>Lehrplangerecht & fachlich korrekt</li>
+                        <li>Quellenangaben inklusive</li>
+                        <li>Lieferung in 24–48 Std.</li>
+                    </ul>
+                    <a href="anfrage.html" class="btn">Anfragen</a>
+                </div>
+            </div>
+
+            <!-- Handout -->
+            <div class="card" id="handout">
+                <div class="card-header">
+                    <h3>Handout</h3>
+                    <div class="price">ab 9 €</div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>bis zu 6 Seiten kompakt</li>
+                        <li>Merksätze, Grafiken, Beispiele</li>
+                        <li>Ausdruck-optimiert (PDF)</li>
+                        <li>Leicht verständlich & strukturiert</li>
+                        <li>Lieferung in 24 Std.</li>
+                    </ul>
+                    <a href="anfrage.html" class="btn">Anfragen</a>
+                </div>
+            </div>
+
+            <!-- Kombi-Angebot -->
+            <div class="card" id="kombi">
+                <div class="card-header">
+                    <h3>Präsentation + Handout</h3>
+                    <div class="price">ab 25 €</div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Perfekt für Referate & Vorträge</li>
+                        <li>Einheitliches Design</li>
+                        <li>Präsentation  + Handout (PDF)</li>
+                        <li>Zeitsparen & professionell</li>
+                        <li>Lieferung in 48 Std.</li>
+                    </ul>
+                    <a href="anfrage.html" class="btn">Anfragen</a>                </div>
+            </div>
+
+            <!-- Lernplan -->
+            <div class="card" id="lernplan">
+                <div class="card-header">
+                    <h3>Lernplan</h3>
+                    <div class="price">ab 9 €</div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Individuell oder fachbezogen</li>
+                        <li>Zeitplan mit Zielen & Pausen</li>
+                        <li>Prüfungs- oder Klausurvorbereitung</li>
+                        <li>Wissenschaftlich & gehirngerecht aufgebaut</li>
+                        <li>Lieferung in 24 Std.</li>
+                    </ul>
+                   <a href="anfrage.html" class="btn">Anfragen</a>                </div>
+            </div>
+
+        </div>
+
+        <!-- Beispielthemen -->
+        <div class="examples">
+            <h3>Beispielthemen – so könnte dein Material aussehen</h3>
+            <ul>
+                <li>Die Französische Revolution – kompakt erklärt</li>
+                <li>Lineare Funktionen einfach verstehen (Mathe)</li>
+                <li>Photosynthese – Prozess & Bedeutung (Biologie)</li>
+                <li>Shakespeares „Romeo und Julia“ – Zusammenfassung & Analyse</li>
+                <li>Der Klimawandel – Ursachen & Lösungen</li>
+                <li>Grammatik der englischen Vergangenheit (Past Tenses)</li>
+                <li>Stalin – Machtübernahme & Diktatur (Geschichte)</li>
+                <li>Elektrizität & Schaltkreise (Physik)</li>
+                <li>Lernplan für die Mathe-Klausur (Klasse 10)</li>
+                <li>Wie schreibe ich eine Interpretation? (Deutsch)</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin: 50px 0;">
+            <h2>Du brauchst etwas anderes?</h2>
+            <p style="max-width: 700px; margin: 20px auto;">Kein Problem! Schreib mir deine Anforderung – ich erstelle dir ein <strong>individuelles Angebot</strong>.</p>
+            <a href="mailto:pa.schuhmann@gmail.com ?subject=Individuelle Anfrage" class="btn" style="display: inline-block; margin-top: 10px;">Nachricht senden</a>
+        </div>
+
+    </main>
+
+
+
+
+</body>
+</html>
