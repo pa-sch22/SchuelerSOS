@@ -7,6 +7,7 @@
     <meta name="description" content="Klare Preise für Präsentationen, Handouts & Lernpläne. Professionell, schnell, günstig. Ideal für Schüler:innen.">
 
     <style>
+        /* Globale Styles */
         * {
             margin: 0;
             padding: 0;
@@ -15,16 +16,18 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5; /* Hellgrau wie gewünscht */
             color: #333;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
+        /* Header mit Logo oben rechts */
         header {
             background: #0057b7;
             color: white;
             text-align: center;
             padding: 50px 20px;
+            position: relative;
         }
 
         header h1 {
@@ -39,18 +42,29 @@
             font-size: 1.1rem;
         }
 
+        /* Logo oben rechts */
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-weight: bold;
+            color: #ffd700;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        /* Navigation */
         nav {
             background: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
         }
 
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -66,9 +80,10 @@
             background-color: #f0f8ff;
         }
 
+        /* Hauptinhalt */
         main {
             max-width: 1100px;
-            margin: 60px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
@@ -76,12 +91,13 @@
             text-align: center;
             font-size: 2rem;
             color: #0057b7;
-            margin: 40px 0 20px;
+            margin: 50px 0 20px;
             position: relative;
         }
 
         h2::after {
-                display: block;
+            content: '';
+            display: block;
             width: 60px;
             height: 3px;
             background: #ffd700;
@@ -192,53 +208,117 @@
             margin-bottom: 10px;
             color: #444;
         }
-    padding: 40px 20px;
-            color: #666;
-            font-size: 0.9rem;
-            background: #eee;
-            margin-top: 60px;
+
+        /* Call to Action */
+        .cta-box {
+            text-align: center;
+            background: #0057b7;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 60px auto;
+            max-width: 800px;
         }
 
+        .cta-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 14px 30px;
+            margin-top: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            background: #e6c200;
+            transform: scale(1.05);
+        }
+
+        /* Footer zentriert & hellgrau */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            background: #eee;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        .footer-container {
+            text-align: center;
+        }
+
+        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                padding: 12px;
+            }
             .examples ul {
                 column-count: 1;
             }
             .card {
                 width: 100%;
             }
-{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5; /* Hellgrauer Hintergrund */
-            color: #333;
-            line-height: 1.6;
+            .logo {
+                font-size: 1.1rem;
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 40px 15px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            main {
+                padding: 0 15px;
+            }
+            .cta-box {
+                padding: 30px 20px;
+            }
+            footer {
+                padding: 30px 15px;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
 
-        <!-- Header mit Bild-Logo oben rechts -->
-<header style="background: #0057b7; /* Starkes Blau – Vertrauen */; color: white; text-align: center; padding: 60px 20px; position: relative;">
-    
-    <!-- Bild-Logo oben rechts -->
-    <div style="
-        position: absolute; 
-        top: 15px; 
-        right: 15px;">
-        <img src="logo.png" style="
-            height: 200px; 
-            border-radius: 8px;
-	 box-shadow: 0 0px 00px rgba(0,0,0,0.2);"> 
-           
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">SchülerSOS</div>
+        <h1>Leistungen & Preise</h1>
+        <p>Klare Preise – professionelle Qualität – schnelle Lieferung</p>
+    </header>
 
-    <!-- Überschrift bleibt zentriert -->
-    <h1>SchülerSOS</h1>
-    <p>Deine professionellen Lernmaterialien – für bessere Noten & mehr Erfolg</p>
-   
-</header>
-
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">← Zurück</a></li>
+            <li><a href="index.html">← Zurück zur Startseite</a></li>
             <li><a href="#präsentation">Präsentation</a></li>
             <li><a href="#handout">Handout</a></li>
             <li><a href="#kombi">Kombi-Angebot</a></li>
@@ -246,9 +326,10 @@
         </ul>
     </nav>
 
+    <!-- Hauptinhalt -->
     <main>
 
-        <h2>Günstige & faire Preise</h2>
+        <h2>Transparente Preise</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
             Alle Preise inkl. Bearbeitung, Design & Korrektur. Lieferung als PDF oder PPTX per E-Mail. 
             <strong>Schnell, sicher, ohne Stress.</strong>
@@ -264,7 +345,7 @@
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>bis zu 15 Folien</li>
+                        <li>10–15 Folien</li>
                         <li>Professionelles Design</li>
                         <li>Lehrplangerecht & fachlich korrekt</li>
                         <li>Quellenangaben inklusive</li>
@@ -278,11 +359,11 @@
             <div class="card" id="handout">
                 <div class="card-header">
                     <h3>Handout</h3>
-                    <div class="price">ab 9 €</div>
+                    <div class="price">ab 12 €</div>
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>bis zu 6 Seiten kompakt</li>
+                        <li>4–6 Seiten kompakt</li>
                         <li>Merksätze, Grafiken, Beispiele</li>
                         <li>Ausdruck-optimiert (PDF)</li>
                         <li>Leicht verständlich & strukturiert</li>
@@ -302,28 +383,30 @@
                     <ul>
                         <li>Perfekt für Referate & Vorträge</li>
                         <li>Einheitliches Design</li>
-                        <li>Präsentation  + Handout (PDF)</li>
+                        <li>Präsentation (PPTX) + Handout (PDF)</li>
                         <li>Zeitsparen & professionell</li>
                         <li>Lieferung in 48 Std.</li>
                     </ul>
-                    <a href="anfrage.html" class="btn">Anfragen</a>                </div>
+                    <a href="anfrage.html" class="btn">Jetzt buchen</a>
+                </div>
             </div>
 
             <!-- Lernplan -->
             <div class="card" id="lernplan">
                 <div class="card-header">
                     <h3>Lernplan</h3>
-                    <div class="price">ab 9 €</div>
+                    <div class="price">ab 15 €</div>
                 </div>
                 <div class="card-body">
                     <ul>
                         <li>Individuell oder fachbezogen</li>
                         <li>Zeitplan mit Zielen & Pausen</li>
                         <li>Prüfungs- oder Klausurvorbereitung</li>
-                        <li>Wissenschaftlich & gehirngerecht aufgebaut</li>
+                        <li>Motivierende Struktur</li>
                         <li>Lieferung in 24 Std.</li>
                     </ul>
-                   <a href="anfrage.html" class="btn">Anfragen</a>                </div>
+                    <a href="anfrage.html" class="btn">Anfragen</a>
+                </div>
             </div>
 
         </div>
@@ -346,16 +429,22 @@
         </div>
 
         <!-- Call to Action -->
-        <div style="text-align: center; margin: 50px 0;">
-            <h2>Du brauchst etwas anderes?</h2>
-            <p style="max-width: 700px; margin: 20px auto;">Kein Problem! Schreib mir deine Anforderung – ich erstelle dir ein <strong>individuelles Angebot</strong>.</p>
-            <a href="mailto:pa.schuhmann@gmail.com ?subject=Individuelle Anfrage" class="btn" style="display: inline-block; margin-top: 10px;">Nachricht senden</a>
+        <div class="cta-box">
+            <h2>Brauchst du etwas anderes?</h2>
+            <p>Kein Problem! Schreib mir deine Anforderung – ich erstelle dir ein individuelles Angebot.</p>
+            <a href="anfrage.html" class="btn-cta">Jetzt anfragen</a>
         </div>
 
     </main>
 
-
-
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+            <p>&copy; 2025 SchülerSOS. Alle Rechte vorbehalten.</p>
+            <p>Ideal für Schüler:innen der Klassen 8–13</p>
+        </div>
+    </footer>
 
 </body>
 </html>
